@@ -24,10 +24,9 @@ Yet another FTP Client written in C#.
 ## ScreenShots
 <details>
     <summary><b>Click Here For Details</b></summary><br>
-![Main Screen](https://user-images.githubusercontent.com/84624971/132209836-fed31fcc-33ba-44cf-ac49-773de1de229f.png)
-![Automations](https://user-images.githubusercontent.com/84624971/132210232-25ed212e-caa9-479b-8684-e6c3369fddb7.png)
-![Settings](https://user-images.githubusercontent.com/84624971/132210343-c9c575ca-4a6b-489d-9f44-2a2771e639ab.png)
-
+    <img src="https://user-images.githubusercontent.com/84624971/132209836-fed31fcc-33ba-44cf-ac49-773de1de229f.png" alt="Main Screen">
+    <img src="https://user-images.githubusercontent.com/84624971/132210232-25ed212e-caa9-479b-8684-e6c3369fddb7.png" alt="Automations">
+    <img src="https://user-images.githubusercontent.com/84624971/132210343-c9c575ca-4a6b-489d-9f44-2a2771e639ab.png" alt="Settings">
 </details>
 
 
