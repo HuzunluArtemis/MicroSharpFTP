@@ -1,6 +1,8 @@
 # MicroSharpFTP
 
-Yet another FTP Client written in C#.
+Yet another (Portable) FTP Client written only in C#. Platforms: Windows 7+ Any CPU
+
+Design inspired from [FileZilla](https://filezilla-project.org), Icons, images from [iconarchive.com](https://iconarchive.com)
 
 ## Features
 <details>
