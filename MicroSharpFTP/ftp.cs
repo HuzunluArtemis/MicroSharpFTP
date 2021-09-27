@@ -482,6 +482,7 @@ namespace MicroSharpFTP
             textBox.Text += DateTime.Now + " - " + log + Environment.NewLine;
             textBox.Text = textBox.Text.Replace(Environment.NewLine + Environment.NewLine, Environment.NewLine);
 
+
         }
         /* Upload File */
         // eski 

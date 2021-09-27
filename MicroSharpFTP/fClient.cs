@@ -1383,11 +1383,30 @@ namespace MicroSharpFTP
         private void listViewftpfiles_DragDrop(object sender, DragEventArgs e)
         {
             string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            if (files != null)
+            if (files != null && files.Count()==1)
             {
+                //  MessageBox.Show(files[0]);
+                try
+                {
+                    FileInfo fileInfo = new FileInfo(files[0]);
+                    string touploadname = fileInfo.Name;
+                    string host = txtHost.Text;
+                    string username = txtUsername.Text;
+                    string password = txtPassword.Text;
+                    // string FTPDosyaYolu = "ftp:/88.88.88.88:8888//FTP_Files";
 
-
-                MessageBox.Show(files[0]);
+                    string port = txtPort.Text;
+                    string FTPDosyaYolu = "ftp://" + host + ":" + port;
+                    ftp ftpClient = new ftp(@FTPDosyaYolu, username, password);
+                    string v = ftpClient.UploadFile(touploadname, files[0], prgCurrent, lblCurrentProgress, lblCurrentBytes);
+                    ftp.Logger(v, txtLogger);
+                    RefreshRemoteList();
+                }
+                catch (Exception)
+                {
+                    
+                    ftp.Logger("Upload unsuccesfully from: " + files[0], txtLogger);
+                }
             }
 
         }
